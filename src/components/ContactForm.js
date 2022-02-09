@@ -60,7 +60,7 @@ export default function ContactForm() {
                 <input type="text" name="subject" id="subject" placeholder="subject" value={toSend.subject} onChange={handleChange}/>
             </div>
             <div className="input-control">
-                <textarea name="message" id="message" placeholder="hello!" rows="6" value={toSend.message} onChange={handleChange}></textarea>
+                <textarea name="message" id="message" rows="6" value={toSend.message} onChange={handleChange}></textarea>
             </div>
             {errorMessage && <div className="form-error-message">{errorMessage}</div>}
 

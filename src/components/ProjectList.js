@@ -1,5 +1,5 @@
 import React, { useState , useEffect } from 'react';
-import { projectData } from "../data";
+import { projectData } from "../assets/data";
 import ProjectCard from "./ProjectCard";
 
 export default function ProjectList() {

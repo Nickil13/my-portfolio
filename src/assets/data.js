@@ -7,13 +7,13 @@ import {SiTailwindcss, SiRedux, SiExpress, SiNodedotjs, SiMongodb} from "react-i
 export const skills=[
     {
         id:1,
-        name: "HTML5",
+        name: "HTML",
         icon: <FaHtml5/>,
         category: "front end"
     },
     {
         id:2,
-        name: "CSS3",
+        name: "CSS",
         icon: <FaCss3Alt/>,
         category: "front end styling"
     },
@@ -25,7 +25,7 @@ export const skills=[
     },
     {
         id:4,
-        name: "React.js",
+        name: "React",
         icon: <FaReact/>,
         category: "front end"
     },
@@ -107,7 +107,7 @@ export const projectData=[
         image: "images/teaCommerce-preview-header.PNG",
         title: "Tea-commerce",
         tags: ["react","scss","redux","node.js", "mongoDB", "express"],
-        description: "E-commerce site for tea deployed on Heroku. Search, order and pay with Stripe and review products! Admins can manage users, orders, and products.",
+        description: "E-commerce site for tea deployed on Heroku. Browse products, order and pay with Stripe. Admins can manage users, orders, and products.",
         repoLink: "https://github.com/Nickil13/tea-commerce",
         liveDemoLink: "https://tea-commerce-app.herokuapp.com",
     
@@ -117,7 +117,7 @@ export const projectData=[
         image: "images/blog-preview-light-header.PNG",
         title: "Learning Blog",
         tags:["react","tailwind css","node.js","mongoDB", "express"],
-        description: "Personal blog deployed on Heroku. Browse posts by category or view all posts using cursor pagination. Add new posts, edit posts and create drafts. Includes a darkmode.",
+        description: "Personal blog deployed on Heroku. View posts by category or browse all posts using cursor pagination. Add new posts, edit posts and create drafts. Includes a darkmode.",
         repoLink: "https://github.com/Nickil13/learning-blog",
         liveDemoLink: "https://learningblogapp.herokuapp.com"
     },
@@ -126,7 +126,7 @@ export const projectData=[
         image: "images/cocktailapp-preview-header.PNG",
         title: "Cocktail Finder",
         tags: ["react","tailwind css"],
-        description: "React app that takes data from the Cocktail Database API and allows the user to search for specific cocktails and see how to make them. Features a dark mode for looking up recipes in any environment!",
+        description: "React app that takes data from the Cocktail Database API and allows the user to search for specific cocktails and see how to make them. Features a dark mode for looking up recipes in any environment.",
         repoLink: "https://github.com/Nickil13/cocktail-finder",
         liveDemoLink: "https://my-cocktail-finder.netlify.app",
     

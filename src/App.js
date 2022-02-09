@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
-import {social,skills} from "./data"
+import {social,skills} from "./assets/data"
 import ProjectList from "./components/ProjectList";
 import Navbar from "./components/Navbar";
 import ContactForm from "./components/ContactForm";
 
 function App() {
-  const [skillViewBlock, setSkillViewBlock] = useState(true);
   const [currentSection, setCurrentSection] = useState('');
 
   React.useEffect(()=>{
@@ -52,7 +51,7 @@ function App() {
               <div className="section-text">
                 <p>I am a self-taught Web Developer who loves bringing ideas to life with code!</p>
                 <p>I build responsive websites using React and the MERN stack.</p>
-                <p>I also have a Bachelor of Arts in Linguistics and I'm an avid gamer.</p>
+                <p>I also have a Bachelor of Arts in Linguistics and I am an avid gamer.</p>
               </div>
               <a className="btn-primary" href="/resources/lindstromn_resume.pdf" target="_blank">Resume</a>
           </div>
@@ -60,27 +59,10 @@ function App() {
 
         {/* Skills Section */}
         <section className="skills-section" id="skills">
-          <h2 className="section-title" onClick={()=>setSkillViewBlock(!skillViewBlock)}>Skills</h2>
+          <h2 className="section-title">Skills</h2>
           <div className="skill-blocks">
-            {/* Front end skill block / tiles */}
-            {skillViewBlock ? <div className="skill-block frontend-skill-block">
-                <h3>Front end</h3>
-                <ul>
-                  {skills.filter((skill)=>skill.category==="front end").map((skill, index)=>{
-                    return(
-                      <li key={index}>{skill.name}</li>
-                    )
-                  })}
-                </ul>
-                <ul className="styling-skills">
-                  {skills.filter((skill)=>skill.category.includes("styling")).map((skill, index)=>{
-                    return(
-                      <li key={index}>{skill.name}</li>
-                    )
-                  })}
-                </ul>
-            </div> :
-            <div className="skill-block tiles">
+            {/* Front end skill  tiles */}
+            <div className="skill-block">
               <h3>Front end</h3>
               <ul className="skill-tiles">
                   {skills.filter((skill)=>skill.category.includes("front end")).map((skill, index)=>{
@@ -92,20 +74,10 @@ function App() {
                     )
                   })}
               </ul>
-            </div>}
+            </div>
 
-            {/* Back end skill block / tiles */}
-            {skillViewBlock ? <div className="skill-block backend-skill-block ">
-              <h3>Back end</h3>
-              <ul>
-                  {skills.filter((skill)=>skill.category==="back end").map((skill, index)=>{
-                    return(
-                      <li key={index}>{skill.name}</li>
-                    )
-                  })}
-              </ul>
-            </div> : 
-            <div className="skill-block tiles">
+            {/* Back end skill tiles */}
+            <div className="skill-block">
             <h3>Back end</h3>
             <ul className="skill-tiles">
                 {skills.filter((skill)=>skill.category==="back end").map((skill, index)=>{
@@ -118,8 +90,6 @@ function App() {
                 })}
             </ul>
           </div>
-            
-            }
           </div>
         </section>
 
@@ -152,8 +122,6 @@ function App() {
         </ul> 
       </footer>
     </div>
-    
-    
   );
 }
 

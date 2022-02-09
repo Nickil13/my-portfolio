@@ -6,7 +6,6 @@ export default function ProjectCard({image,title,tags,description,repoLink,liveD
         <article className="project-card">
             <div className="card-img-container">
             <img src={image} alt={title} className="card-img" />
-            {/* <a href={liveDemoLink} target="_blank" rel="noreferrer"><img src={image} alt={title} className="card-img" width="200" height="200" /></a> */}
             </div>
             <div className="card-content-container">
                 <div className="card-content">

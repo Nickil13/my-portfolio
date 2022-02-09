@@ -1,5 +1,5 @@
 import React, {useRef, useState, useEffect} from 'react';
-import {social, links} from "../data";
+import {social, links} from "../assets/data";
 import {BiMenu} from "react-icons/bi";
 import {VscClose} from "react-icons/vsc";
 
