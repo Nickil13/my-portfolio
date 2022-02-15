@@ -36,7 +36,7 @@ function App() {
       <div className="hero">
         <div className="hero-content">
           <h1 className="hero-title">Hi, I'm <span>Nicki Lindstrom</span></h1>
-          <h4>Full stack web developer</h4>
+          <h4>Front-end web developer</h4>
           <a href="#contact" className="btn-primary">Contact me</a>
         </div>
        
